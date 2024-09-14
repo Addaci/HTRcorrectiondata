@@ -116,7 +116,7 @@ latin_expansions = {
     r'\bvizt/\b': 'videlicet/',
 }
 
-latin_expansions.update ={
+latin_expansions.update =({
     r'\bresp\b': 'respondet',
     r'\bnesc\b': 'nescit',
     r'\bvid\b': 'videre',
@@ -140,4 +140,36 @@ latin_expansions.update ={
     r'\bcum\b': 'cum',
     r'\bcontra\b': 'contra',
     r'\bcaus\b': 'causa',
-}
+})
+
+latin_expansions.update({
+    # Existing entries with corrections and notes
+    r'\bcom Cant\b': 'Comitatus Cantii',              # Note: Kent
+    r'\bcom Devon\b': 'Comitatus Devoniae',           # Note: Devon
+    r'\bcom Dorset\b': 'Comitatus Dorsetiae',         # Note: Dorset
+    r'\bcom Essex\b': 'Comitatus Essexiae',           # Note: Essex
+    r'\bcom Surr\b': 'Comitatus Surriae',             # Note: Surrey
+
+    # New entries for coastal counties with notes
+    r'\bcom Northumbl\b': 'Comitatus Northumbriae',       # Note: Northumberland
+    r'\bcom Duresm\b': 'Comitatus Dunelmensis',           # Note: Durham
+    r'\bcom Ebor\b': 'Comitatus Eboracensis',             # Note: Yorkshire
+    r'\bcom Lincol\b': 'Comitatus Lincolniensis',         # Note: Lincolnshire
+    r'\bcom Norff\b': 'Comitatus Norfolciae',             # Note: Norfolk
+    r'\bcom Suff\b': 'Comitatus Suffolciae',              # Note: Suffolk
+    r'\bcom Suss\b': 'Comitatus Sussexiae',               # Note: Sussex
+    r'\bcom Hants\b': 'Comitatus Hantoniensis',           # Note: Hampshire
+    r'\bcom Cornub\b': 'Comitatus Cornubiae',             # Note: Cornwall
+    r'\bcom Somerset\b': 'Comitatus Somersetensis',       # Note: Somerset
+    r'\bcom Glouc\b': 'Comitatus Glocestriae',            # Note: Gloucestershire
+    r'\bcom Lanc\b': 'Comitatus Lancastriae',             # Note: Lancashire
+    r'\bcom Cumb\b': 'Comitatus Cumbriae',                # Note: Cumberland
+    r'\bcom Monm\b': 'Comitatus Monumethensis',           # Note: Monmouthshire (Welsh: Sir Fynwy)
+    r'\bcom Glamorg\b': 'Comitatus Glamorganensis',       # Note: Glamorgan (Welsh: Morgannwg)
+    r'\bcom Pemb\b': 'Comitatus Pembrochiae',             # Note: Pembrokeshire (Welsh: Sir Benfro)
+    r'\bcom Carmarthen\b': 'Comitatus Carmarthensis',     # Note: Carmarthenshire (Welsh: Sir Gaerfyrddin)
+    r'\bcom Cardigan\b': 'Comitatus Cardiganensis',       # Note: Cardiganshire (Welsh: Ceredigion)
+    r'\bcom Angl\b': 'Comitatus Monae',                   # Note: Anglesey (Welsh: Ynys Môn)
+    r'\bcom Anglesey\b': 'Comitatus Monae',               # Note: Anglesey (Welsh: Ynys Môn)
+    r'\bcom Midd\b': 'Comitatus Middlesexiae',            # Note: Middlesex
+})
